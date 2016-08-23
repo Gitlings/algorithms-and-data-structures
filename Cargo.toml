@@ -1,0 +1,12 @@
+[package]
+name = "hello_cargo"
+version = "0.1.0"
+authors = ["Your Name <you@example.com>"]
+
+[[bin]]
+name = "sorting_test"
+path = "src/sorting/test.rs"
+
+[[bin]]
+name = "sorting_insertion"
+path = "src/sorting/insertion.rs"

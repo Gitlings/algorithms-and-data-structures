@@ -1,0 +1,13 @@
+pub struct SortedVector {
+    vector: Vec<i32>,
+}
+
+impl SortedVector {
+    pub fn new(vector: Vec<i32>) -> SortedVector {
+        SortedVector { vector: vector }
+    }
+
+    pub fn get(&self) -> &Vec<i32> {
+        &self.vector
+    }
+}
