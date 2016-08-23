@@ -6,13 +6,13 @@ impl Sorts for SortedVector {
     fn sort(&mut self) {
         for j in 1..self.vector.len() {
             let x = self.vector[j];
-            let mut i: i32 = j as i32 - 1;
+            let mut i = j;
 
-            while i >= 0 && x < self.vector[i as usize] {
-                self.vector[(i + 1) as usize] = self.vector[i as usize];
+            while i > 0 && x < self.vector[i - 1] {
+                self.vector[i] = self.vector[i - 1];
                 i -= 1;
             }
-            self.vector[(i + 1) as usize] = x;
+            self.vector[i] = x;
         }
     }
 }
